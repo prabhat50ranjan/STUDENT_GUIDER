@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+body {font-family: "Open Sans"}
+</style>
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="w3-xxxlarge"><b>COLLEGE GYAN</b></h1>
+    <h6>Welcome to<span class="w3-tag">gyan's world </span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWj3VHqRshZ4ablyaPGm-8-BWmxn7ddHCXwHZtMrAfTEP9xAcxmA" alt="University image" width="1000" height="400">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white"></h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>PHYSCOMETRIC TEST</b></h1>
+      <h6><a href="/quiz"><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" >QUIZ-1</button></a></h6>
+      <h6><a href="/quiz1"><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" >QUIZ-2</button></a></h6>
+      <h6><a href="/quiz2"><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" >QUIZ-3</button></a></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+    
+
+    <div style="position:relative; width:50%; height:400px;">
+          <button  type="button" class="btn btn-primary" style="position:relative; height:100px; width: 400px; margin-left:100px;">LOCATION BASED COLLEGE SEARCH</button>
+          <br>
+         <form action="/loc_based_search" method="GET">
+           
+             <button type="button" class="btn btn-info" style="position:relative; margin-top:30px; margin-left:90px; height:70px; width: 250px; margin-left:100px;">CHOOSE YOUR COLLEGE CITY</button><br>
+
+                       <select name="city_name">
+                         <option value="NOIDA">NOIDA</option>
+                         <option value="DELHI">DELHI</option>
+                         <option value="KERALA">KERALA</option>
+                        <option value="KARNATAKA">KARNATAKA</option>
+                       </select>
+                                              
+               <br>
+
+               <button type="button" class="btn btn-info" style="position:relative; margin-top:30px; margin-left:90px;height:70px; width: 250px; margin-left:100px;">CHOOSE STREAM</button><br>
+
+                       <select name="stream">
+                         <option value="BTECH">BTECH</option>
+                         <option value="MBA">MBA</option>
+                         <option value="HOSPITALITY">HOSITALITY</option>
+                        
+                       </select>
+
+             <br>
+
+             <button style="position:relative; margin-top:30px; margin-left:0px; height:30px; width: 100px;" class="btn btn-danger" type="submit">FIND
+               
+             </button>
+<br>
+
+
+         </form>
+
+
+        </div>
+
+
+
+          <h3>ABOUT FETCHING COLLEGE INFO</h3>
+          <h5>stream wise colleges</h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="data:image/jpeg;base64,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" alt="Girl Hat" style="width:50%" class="w3-padding-16">
+          <p><strong>About</strong> You can get the information of various colleges in varios states.College gyan provides you the information about different
+                     		    colleges according to diffferent streams.You can select Stream and the city or state in which you want to search the college.
+								College gyan will fetch different colleges in that state along with various details like fees, average package of placement and rating.
+								</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                              </div>
+              <div class="w3-col l10 m9">
+                
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>PHYSCOMETRIC TEST</h3>
+          <h5>Information</h5>
+        </div>
+
+        <div class="w3-justify">
+          
+          
+          <p>Using our PHYSCOMETRIC test you can answer various physcometric questions and evaluate yourself.
+		     Some questions with options will be provided you will have to answer them and based on the recorded responses some
+			 results will be generated.
+		  </p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_train.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Amber <span class="w3-opacity w3-medium">April 26, 2015, 10:52 PM</span></h4>
+                <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Angie <span class="w3-opacity w3-medium">April 23, 2015, 9:12 PM</span></h4>
+                <p>Love hats!!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+          <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRf34IzKBhGY8PvLU3TPG74dZUO_BjRC39iuUKyL11wRc1Y6dIL" alt="Jane" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>CRAWL COLLEGES INFORMATION</h4>
+          <p>BELOW SELECT YOUR COLLEGE TYPE AND CITY AND GET THE DETAILS OF VARIOUS COLLEGES IN THAT STATE</p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Posts -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>COLLEGE TYPE</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+          <!--  <img src="/w3images/avatar_smoke.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px"> -->
+            <span class="w3-large"><a href="/btech_andhra"><button>BTECH </button></a></span>
+            <br>
+            <span>ANDHRA</span>
+          </li>
+          <li class="w3-padding-16">
+           
+            <span class="w3-large"><a href="/btech_delhi"><button>BTECH </button></a></span>
+            <br>
+            <span>DELHI</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/btech_karnataka"><button>BTECH</button></a></span>
+            <br>
+            <span>KARNATAKA</span>
+          </li>
+          <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/btech_kerala"><button>BTECH </button></a></span>
+            <br>
+            <span>KERALA</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/design_assam"><button>DESIGN</button></a></span>
+            <br>
+            <span>ASSAM</span>
+          </li>
+		  
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/design_delhi"><button>DESIGN</button></a></span>
+            <br>
+            <span>DELHI</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/design_gujrat"><button>DESIGN</button></a></span>
+            <br>
+            <span>GUJRAT</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/hospitality_andhra"><button>HOSPITALITY</button></a></span>
+            <br>
+            <span>ANDHRA</span>
+          </li>
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/hospitality_delhi"><button>HOSPITALITY</button></a></span>
+            <br>
+            <span>DELHI</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/hospitality_karnataka"><button>HOSPITALITY</button></a></span>
+            <br>
+            <span>KARNATAKA</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/mba_andhra"><button>MBA</button></a></span>
+            <br>
+            <span>ANDHRA</span>
+          </li>
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/mba_assam"><button>MBA</button></a></span>
+            <br>
+            <span>ASSAM</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/mba_delhi"><button>MBA</button></a></span>
+            <br>
+            <span>DELHI</span>
+          </li>
+		  
+		  <li class="w3-padding-16">
+            
+            <span class="w3-large"><a href="/mba_karnataka"><button>MBA</button></a></span>
+            <br>
+            <span>KARNATAKA</span>
+          </li>
+		  
+        </ul>
+      </div>
+      <hr>
+
+      <!-- Advertising -->
+      
+      <hr>
+
+      <!-- Tags -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Tags</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>
+            <span class="w3-tag w3-black w3-margin-bottom">Btech in delhi</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">karnataka college</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">btech in jaipur</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Mba in delhi</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">mba in karnataka</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">mba in gujrat</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hospitality</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hospitality in delhi</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Hospitality in gujrat</span>
+            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">undergraduate colleges</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">postgraduate</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom"></span>
+            
+          </p>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Inspiration -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Inspiration</h4>
+        </div>
+        <div class="w3-row-padding w3-white">
+          <div class="w3-col s6">
+           
+          </div>
+          <div class="w3-col s6">
+            
+         </div>
+        </div>
+      </div>
+      <hr>
+
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Follow Me</h4>
+        </div>
+        <div class="w3-container w3-xlarge w3-padding">
+          <i class="fa fa-facebook-official w3-hover-opacity"></i>
+          <i class="fa fa-instagram w3-hover-opacity"></i>
+          <i class="fa fa-snapchat w3-hover-opacity"></i>
+          <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+          <i class="fa fa-twitter w3-hover-opacity"></i>
+          <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+      </div>
+      <hr>
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey" style="padding:32px">
+  <a href="#" class="w3-button w3-black w3-padding-large w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+function likeFunction(x) {
+    x.style.fontWeight = "bold";
+    x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
